@@ -1,0 +1,10 @@
+<?php
+session_start();
+if(empty($_SESSION['user_cod']))
+  {
+   header('location:../salir.php');	
+	  }
+  if(empty($_SESSION['nombre_empleado']))
+  {
+    header('location:../salir.php');	
+}
